@@ -18,9 +18,9 @@ const Navbar = ({ open, setOpen }) => {
     return (
         <div className="navbar">
             <div className='navbar__left'>
-                <Link to='/'>
+                <a href='/'>
                 <img src={ navLogo } alt='logo' />
-                </Link>
+                </a>
             </div>
             
             <div className='navbar__list'>

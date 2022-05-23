@@ -15,7 +15,7 @@ const VideoHub = () => {
             <Video videoLink="https://www.youtube.com/embed/lGwa6__oA3w" className="video"/>
             <Video videoLink="https://www.youtube.com/embed/HpFMqLEJRWE" className="video"/>
         </div>
-            <Link to='/videos'>Watch More</Link>
+            <a href='/videos'>Watch More</a>
     </div>
   )
 }

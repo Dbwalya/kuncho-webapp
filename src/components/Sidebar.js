@@ -8,7 +8,7 @@ const Sidebar = ({ open, setOpen }) => {
         <div className={`sidebar ${open ? 'sidebar__openNavbar' : 'sidebar__closeNavbar'}`}>
             {navbarData.map(item => (
                 <div className="sidebar__item">
-                    <Link to={item.path}><h2 onClick={() => setOpen(false)}>{item.title}</h2></Link>
+                    <a href={item.path}><h2 onClick={() => setOpen(false)}>{item.title}</h2></a>
                 </div>
             ))}
         </div>
