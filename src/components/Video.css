@@ -1,0 +1,15 @@
+.video {
+    display: flex;
+}
+.video iframe {
+    height: 300px;
+    width: 500px;
+    margin: 1rem;
+}
+
+@media screen and (max-width: 680px) {
+    .video iframe {
+        width: unset !important;
+        height: 300px;
+    }
+}

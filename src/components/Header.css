@@ -1,0 +1,107 @@
+.header {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+  }
+  
+  .header__right {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    background-image: url("./images/header-image.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .header__right-title {
+    height: 60%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+    z-index: 100;
+    text-align: center;
+  }
+  .header__right-title > h2 {
+    font-size: 50px;
+    line-height: 66px;
+    position: relative;
+    text-shadow: 0 0 10px #fff, 0 0 40px #fff;
+  }
+  
+  .header__right-title > span {
+    padding: 1rem 7vw;
+    border-radius: 50px;
+  }
+  
+  .header__right-title > span {
+    display: flex;
+    align-items: center;
+    gap: 1.1rem;
+  }
+  .header__right-title span > img {
+    height: 24px;
+    object-fit: contain;
+    cursor: pointer;
+    border-radius: 50px;
+    transform: scale(2.5);
+  }
+  
+  .header__right-title > a {
+    background-color: #0000008e;
+    padding: 1rem 5vw;
+    text-decoration: none;
+    margin-top: 40px;
+    border-radius: 50px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    transition: all ease-in-out 0.3s;
+  }
+  
+  .header__right-title a:hover .MuiSvgIcon-root {
+    color: #ff0000a1;
+    transition: 0.3s;
+  }
+  
+  .header__right-title > a:hover {
+    color: rgba(255, 255, 255, 0.712);
+  }
+  .fade {
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    background-image: linear-gradient(
+      to right,
+      rgba(214, 34, 21, 0.418),
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.1)
+    );
+    position: absolute;
+  }
+  
+  
+  @media screen and (max-height: 680px) {
+      .header__right-title h2 {
+            font-size: 34px;
+      }
+      .header__right-title {
+          text-align: center;
+          width: 60%;
+      }
+  }
+  /* @media screen and (max-height: 420px) {
+      .header__right-title h2 {
+            font-size: 12px !important;
+      }
+      .header__right-title {
+          width: 60%;
+      }
+  } */

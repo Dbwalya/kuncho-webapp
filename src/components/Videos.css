@@ -1,0 +1,29 @@
+.videos {
+    background-color: #111;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 4rem;
+    width: 90wv;
+    padding-top: 2rem;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.videos__wrapper {
+    background-color: #111;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.videos__wrapper  a {
+    text-decoration: none;
+    color: #fff;
+    padding: 1rem 5rem;
+    background-color: red;
+    border-radius: 10px;
+    margin-top: 0.6rem;
+    margin-bottom: 3rem;
+}       

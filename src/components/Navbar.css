@@ -1,0 +1,80 @@
+.navbar {
+    height: 80px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    position: relative;
+    display: flex;
+  }
+
+  .navbar__list {
+      display: flex;
+      height: 100%;
+      align-items: center;
+      flex: 0.4;
+      justify-content: space-evenly;
+      margin-left: auto;      
+      margin-right: auto;      
+  }
+
+  .navbar__left {
+      flex: 0.3;
+      display: flex;
+      justify-content: center;
+  }
+  .navbar__left > a img {
+      height: 50px;
+      object-fit: contain;
+      border-radius: 50%;
+  }
+  .navbar__right {
+      flex: 0.3;
+      color: lightgray;
+      display: flex;
+      justify-content: space-evenly;
+  }
+  
+  .navbar__right .MuiSvgIcon-root {
+      cursor: pointer;
+  }
+  .navbar__menu {
+      position: absolute;
+      right: 40px;
+      visibility: hidden;
+      z-index: 150;
+  }
+
+  .navbar__list > h2 {
+      color: lightgray;
+      font-size: 18px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all ease 0.3s;
+  }
+
+  .navbar__list h2:hover {
+      color: red;
+  }
+  .right__icons {
+      display: flex;
+      gap: 30px;
+      transition: all ease 0.3s;
+  }
+
+  .right__icons .MuiSvgIcon-root:hover {
+      color: red;
+  } 
+  .right__icons .facebook__icon:hover {
+      color: #006fd6;
+  } 
+
+
+  @media screen and (max-width: 610px) {
+      .navbar__menu {
+          visibility: visible;
+      }
+
+      .navbar__right, .navbar__list {
+          visibility: hidden;
+      }
+  }
