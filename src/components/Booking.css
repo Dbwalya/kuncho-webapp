@@ -1,0 +1,47 @@
+.booking {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+}
+form {
+    margin: 1.5rem;
+    max-width: 500px;
+    width: 90vw;
+    height: 430px;
+    border-radius: 10px;
+    background-color: #002D62;
+    opacity: 0.8;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2rem;
+    gap: 2rem;
+}
+
+form input, select {
+    padding: 0.981rem;
+    width: 90%;
+    border: none;
+    background: transparent;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 0.1px solid #fff;
+    color: #aaa;
+    outline: none;
+}
+form input::placeholder {
+    color: whitesmoke;
+}
+
+form button {
+    padding: 1rem 4rem;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+}

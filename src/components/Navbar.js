@@ -26,7 +26,7 @@ const Navbar = ({ open, setOpen }) => {
             <div className='navbar__list'>
                 {navbarData.map((data) => (
                     <>
-                        <h2>{data.title}</h2>
+                        <a href={data.path}>{data.title}</a>
                     </>
                 ))}
             </div>

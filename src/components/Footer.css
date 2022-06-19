@@ -4,34 +4,51 @@
     width: 100%;
     background-position: top;
     width: 100%;
-  background-image: url("./images/mic.JPG");
-
-
-background-position: center;
-  background-size: cover;
-
+    background-image: url("./images/mic.JPG");
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    flex-wrap: wrap;
 }
 
+.footer__left, .footer__right {
+    flex: 1;
+}
 .footer__left {
-    height: 100%;
-    flex: 0.3;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.footer__left-container {
+    flex: 0.5;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    height: 40%;
 }
-.left__icons {
+.left__contacts {
+    flex: 0.5;
     display: flex;
-    width: 100%;
-    justify-content: center;
-    padding-top: 40px;
+    flex-direction: column;
+    align-items: center;
+    height: 50%;
+    gap: 18px;
+    justify-content: space-evenly;
+    cursor: pointer;
 }
 
-.left__icons > .MuiSvgIcon-root {
-        margin: 13px;
-        cursor: pointer;
-        color: #fff;
-    }
-.footer__left > img {
+.left__contacts span:hover {
+    color: red;
+    transition: all ease 0.3s;
+}
+.footer__left-icons {
+    width: 160px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer__left img {
     height: 50px;
     object-fit: contain;
     border-radius: 100px;
@@ -40,7 +57,7 @@ background-position: center;
 .footer__right {
     display: flex;
     justify-content: space-evenly;
-    flex: 0.7;
+    flex: 1;
     align-items: center;
 }
 
@@ -62,22 +79,4 @@ background-position: center;
 }
 .footer__right span:hover {
     color: red;
-}
-
-
-@media screen and (max-width: 512px) {
-    .footer {
-        flex-direction: column;
-        padding-bottom: 2.4rem;
-    };
-    .footer__right span {
-        color: #fff;
-        transition: all 0.3s ease;
-        cursor: pointer;
-        transform: scale(0.9);
-    }
-    .footer__right h2 {
-        color: #fff;
-        font-size: 13px;
-    }
 }

@@ -14,7 +14,7 @@ export const navbarData = [
     },
     {
         title: 'About',
-        path: '/about'
+        path: '/aboutus'
     }
     
 ]

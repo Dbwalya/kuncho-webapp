@@ -10,6 +10,7 @@ import Footer from './components/Footer';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
 import Music from './components/Music';
+import AboutUs from './components/AboutUs';
 
 const App = () => {
   const[open, setOpen] = useState(false);
@@ -24,6 +25,9 @@ const App = () => {
             </Route>
             <Route path='/music'>
                 <Music />
+            </Route>
+            <Route path='/aboutus'>
+              <AboutUs />
             </Route>   
             <Route path="/">
                 <Header />

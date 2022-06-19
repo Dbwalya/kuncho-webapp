@@ -17,6 +17,11 @@
       margin-right: auto;      
   }
 
+  .navbar__list a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+  }
   .navbar__left {
       flex: 0.3;
       display: flex;
@@ -78,3 +83,7 @@
           visibility: hidden;
       }
   }
+
+  git config --global user.email "danielbwalya620@gmail.com"
+
+  git config --global user.name "dbwalya"
